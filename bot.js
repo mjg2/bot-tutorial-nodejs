@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /[Dd]oxbot/;
+      botRegex = /[Rr]ickybot/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -56,34 +56,38 @@ function postMessage() {
 function generateResponse() {
   console.log('generating response');
   var responseArray = [
-    'Ralph Lauren Polo',
-    '~donuts tho~',
-    '~brisket tho~',
-    'at least its not a white condiment',
-    'first rehearsal has to be coherent',
-    'DO IT',
-    'YEET YEET YEET',
-    'ITS LIT',
-    'NO CHILL',
-    'DOWN',
-    '~dabs~',
-    '~~open shak now ats!~~',
-    'anyone want to split an uber to staph retreat?',
-    'Cardigans are life',
-    'Does anyone have a calculator I can borrow? I have a midterm in twenty minutes.',
-    'GUYS I MADE IT',
-    'I love spoonman, putting it back in the folder is a great idea',
-    'youll do it if ur real',
+    'Wine & Cheese is Wednesday',
+    'Brad and I are married',
+    'I dont remember. I just know Brad and I made out.',
+    'Im old',
+    'Kristeeeeeeeeeeeeeeeeeeeeeeeeeeen',
+    '*makes cat noise*',
+    'It was Dans fault he fell out of the tree',
+    'Was I not drunk?',
+    'lulz good luck',
+    'GAAAAAAAAAAAYYYYYYYYYYYYYYY',
+    'thats too hetero',
+    'I dont care',
+    'booooo',
+    '*insert high-pitched female scream*',
+    'Remember the eKlue of Adorable Animals?',
+    'goatsie',
+    'Im sooooooooo old',
+    'I WILL BREAK YOU!',
     'ughhhh',
-    'can I come to your special d?',
-    'I cant go, I have a special d',
-    'lmao',
-    'Im kinda into it',
-    'ITS YOUR BOI',
-    'you guys are brutal af',
-    'OPEN SHAK RN',
-    '~slidin into the DMs~',
-    '1-800-SEXLINEBLING',
+    'Ewww beer',
+    'Not gay enough',
+    'wine',
+    'Do better!',
+    'Dan I will kick you out my my room!',
+    'Its like the movie Teeth',
+    'Penis',
+    'mmmmm alcohol',
+    'Its not my problem'
+    'I will literaly freeze to death'
+    'I need drugs.'
+    'GLITTER!!'
+    'Still not gay enough'
     
   ];  
   return responseArray[Math.floor(Math.random()*responseArray.length)];
